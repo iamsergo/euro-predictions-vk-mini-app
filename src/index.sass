@@ -1,0 +1,23 @@
+*
+  box-sizing: border-box
+
+body
+  padding: 0
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', sans-serif
+
+
+.vkuiCell .vkuiCell__marker--off
+  display: block !important
+
+.vkuiCell__checkbox:checked ~ .vkuiCell__marker--off
+  display: none !important
+
+.vkuiCell .vkuiCell__marker--on
+  display: none !important
+
+.vkuiCell__checkbox:checked ~ .vkuiCell__marker--on
+  display: block !important
+
+.vkuiIcon
+  padding: 0 !important

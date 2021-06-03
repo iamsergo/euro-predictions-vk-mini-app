@@ -1,0 +1,122 @@
+[
+  {
+    "id": "0",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/ITA.png",
+    "name": "Италия"
+  },
+  {
+    "id": "1",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/TUR.png",
+    "name": "Турция"
+  },
+  {
+    "id": "2",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/SUI.png",
+    "name": "Швейцария"
+  },
+  {
+    "id": "3",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/WAL.png",
+    "name": "Уэльс"
+  },
+  {
+    "id": "4",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/RUS.png",
+    "name": "Россия"
+  },
+  {
+    "id": "5",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/BEL.png",
+    "name": "Бельгия"
+  },
+  {
+    "id": "6",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/DEN.png",
+    "name": "Дания"
+  },
+  {
+    "id": "7",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/FIN.png",
+    "name": "Финляндия"
+  },
+  {
+    "id": "8",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/NED.png",
+    "name": "Нидерланды"
+  },
+  {
+    "id": "9",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/UKR.png",
+    "name": "Украина"
+  },
+  {
+    "id": "10",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/AUT.png",
+    "name": "Австрия"
+  },
+  {
+    "id": "11",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/MKD.png",
+    "name": "Северная Македония"
+  },
+  {
+    "id": "12",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/ENG.png",
+    "name": "Англия"
+  },
+  {
+    "id": "13",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/CRO.png",
+    "name": "Хорватия"
+  },
+  {
+    "id": "14",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/CZE.png",
+    "name": "Чехия"
+  },
+  {
+    "id": "15",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/SCO.png",
+    "name": "Шотландия"
+  },
+  {
+    "id": "16",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/ESP.png",
+    "name": "Испания"
+  },
+  {
+    "id": "17",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/POL.png",
+    "name": "Польша"
+  },
+  {
+    "id": "18",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/SWE.png",
+    "name": "Швеция"
+  },
+  {
+    "id": "19",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/SVK.png",
+    "name": "Словакия"
+  },
+  {
+    "id": "20",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/GER.png",
+    "name": "Германия"
+  },
+  {
+    "id": "21",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/FRA.png",
+    "name": "Франция"
+  },
+  {
+    "id": "22",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/POR.png",
+    "name": "Португалия"
+  },
+  {
+    "id": "23",
+    "logo": "https://www.uefa.com/imgml/flags/70x70/HUN.png",
+    "name": "Венгрия"
+  }
+]

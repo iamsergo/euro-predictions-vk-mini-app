@@ -1,0 +1,1 @@
+export type Checkable<T> = T & { checked: boolean }

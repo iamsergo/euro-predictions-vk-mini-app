@@ -1,0 +1,8 @@
+export const MAIN_PANEL = 'main'
+export const GROUP_PREDICTOR_PANEL = 'group-predictor'
+export const THIRD_PLACES_PREDICTOR_PANEL = 'third-places-predictor'
+export const PLAY_OFF_PANEL_8 = 'play-off-8-panel'
+export const PLAY_OFF_PANEL_4 = 'play-off-4-panel'
+export const PLAY_OFF_PANEL_2 = 'play-off-2-panel'
+export const PLAY_OFF_PANEL_1 = 'play-off-1-panel'
+export const END_TOURNAMENT_PREDICTION_PANEL = 'end-tournament-prediction-panel'

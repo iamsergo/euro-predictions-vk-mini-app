@@ -1,0 +1,158 @@
+[
+  {
+    "id": "0",
+    "name": "Группа A",
+    "teams": [
+      {
+        "id": "0",
+        "logo": "ITA.webp",
+        "name": "Италия"
+      },
+      {
+        "id": "1",
+        "logo": "TUR.png",
+        "name": "Турция"
+      },
+      {
+        "id": "2",
+        "logo": "SUI.png",
+        "name": "Швейцария"
+      },
+      {
+        "id": "3",
+        "logo": "WAL.png",
+        "name": "Уэльс"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "name": "Группа B",
+    "teams": [
+      {
+        "id": "4",
+        "logo": "RUS.webp",
+        "name": "Россия"
+      },
+      {
+        "id": "5",
+        "logo": "BEL.png",
+        "name": "Бельгия"
+      },
+      {
+        "id": "6",
+        "logo": "DEN.png",
+        "name": "Дания"
+      },
+      {
+        "id": "7",
+        "logo": "FIN.png",
+        "name": "Финляндия"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Группа C",
+    "teams": [
+      {
+        "id": "8",
+        "logo": "NED.png",
+        "name": "Нидерланды"
+      },
+      {
+        "id": "9",
+        "logo": "UKR.png",
+        "name": "Украина"
+      },
+      {
+        "id": "10",
+        "logo": "AUS.png",
+        "name": "Австрия"
+      },
+      {
+        "id": "11",
+        "logo": "MAC.png",
+        "name": "Северная Македония"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Группа D",
+    "teams": [
+      {
+        "id": "12",
+        "logo": "ENG.png",
+        "name": "Англия"
+      },
+      {
+        "id": "13",
+        "logo": "CRO.png",
+        "name": "Хорватия"
+      },
+      {
+        "id": "14",
+        "logo": "CZE.png",
+        "name": "Чехия"
+      },
+      {
+        "id": "15",
+        "logo": "SCO.png",
+        "name": "Шотландия"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Группа E",
+    "teams": [
+      {
+        "id": "16",
+        "logo": "SPA.png",
+        "name": "Испания"
+      },
+      {
+        "id": "17",
+        "logo": "POL.png",
+        "name": "Польша"
+      },
+      {
+        "id": "18",
+        "logo": "SWE.png",
+        "name": "Швеция"
+      },
+      {
+        "id": "19",
+        "logo": "SLO.png",
+        "name": "Словакия"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Группа F",
+    "teams": [
+      {
+        "id": "20",
+        "logo": "GER.png",
+        "name": "Германия"
+      },
+      {
+        "id": "21",
+        "logo": "FRA.webp",
+        "name": "Франция"
+      },
+      {
+        "id": "22",
+        "logo": "POR.png",
+        "name": "Португалия"
+      },
+      {
+        "id": "23",
+        "logo": "HUN.png",
+        "name": "Венгрия"
+      }
+    ]
+  }
+]
