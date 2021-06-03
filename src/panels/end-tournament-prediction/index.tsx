@@ -44,9 +44,9 @@ const EndTournamentPanel: React.FC<EndTournamentPanelProps> = ({
       
       <Winner team={winner} />
 
-      <Div>
+      <Div style={{marginTop:24}}>
         <Button
-          style={{width:'100%'}}
+          style={{width:'100%', color: '#863732'}}
           size="m"
           mode="tertiary"
           onClick={goBack}
