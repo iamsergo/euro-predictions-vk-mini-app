@@ -18,10 +18,21 @@ interface WinnerProps
 const Winner: React.FC<WinnerProps> = ({
   team,
 }) => {
+  const [confetiShowed, setConfetiShowed] = React.useState(false)
+  React.useEffect(() => {
+    const tid = window.setTimeout(() => {
+      setConfetiShowed(true)
+    }, 750)
+
+    return () => {
+      window.clearTimeout(tid)
+    }
+  },[])
+
   return(
     <div className="winner">
       <div className="winner__in">
-        <img className="winner__bg" src={bg} alt="oops..." />
+        {confetiShowed && <img className="winner__bg" src={bg} alt="oops..." />}
         <Flag className="winner__team" country={team.logo} winner/>
         <img className="winner__cup" src={cup} alt="oops..." />
       </div>
