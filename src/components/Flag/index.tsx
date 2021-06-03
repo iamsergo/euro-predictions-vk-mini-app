@@ -32,12 +32,16 @@ interface FlagProps
   country: string
   winner?: boolean
   className?: string
+  filled?: boolean
+  translated?: boolean
 }
 
 const Flag: React.FC<FlagProps> = ({
   country,
   winner,
   className,
+  translated,
+  filled,
 }) => {
   let src = ''
 
@@ -140,8 +144,13 @@ const Flag: React.FC<FlagProps> = ({
       break
   }
 
+  const style = {
+    border: filled ? '2px solid gray' : '',
+    transform: `translateX(${translated ? -4 : 0}px)`
+  }
+
   return (
-    <Avatar className={className} size={winner ? 96 : 24} src={src}/>
+    <Avatar style={style} className={className} size={winner ? 96 : 28} src={src}/>
   )
 }
 

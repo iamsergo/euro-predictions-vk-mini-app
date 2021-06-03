@@ -11,8 +11,10 @@ import PlayOff2Panel from './panels/play-off-2';
 import PlayOff1Panel from './panels/play-off-1';
 import PlayOff8Panel from './panels/play-off-8';
 import EndTournamentPanel from './panels/end-tournament-prediction';
+import GamesPanel from './panels/games';
+import GamePredictionPanel from './panels/game-prediction';
 
-import { END_TOURNAMENT_PREDICTION_PANEL, GROUP_PREDICTOR_PANEL, MAIN_PANEL, PLAY_OFF_PANEL_1, PLAY_OFF_PANEL_2, PLAY_OFF_PANEL_4, PLAY_OFF_PANEL_8, THIRD_PLACES_PREDICTOR_PANEL } from './constants/panels';
+import { END_TOURNAMENT_PREDICTION_PANEL, GAMES_PANEL, GAME_PREDICTION_PANEL, GROUP_PREDICTOR_PANEL, MAIN_PANEL, PLAY_OFF_PANEL_1, PLAY_OFF_PANEL_2, PLAY_OFF_PANEL_4, PLAY_OFF_PANEL_8, THIRD_PLACES_PREDICTOR_PANEL } from './constants/panels';
 import { useSelector } from 'react-redux';
 import { RootState } from './store/rootReducer';
 
@@ -38,6 +40,7 @@ const App = () => {
       <AppRoot>
         <View activePanel={currentPanel}>
           <MainPanel id={MAIN_PANEL} />
+          
           <GroupPredictorPanel id={GROUP_PREDICTOR_PANEL} />
           <ThirdPlacesPredictorPanel id={THIRD_PLACES_PREDICTOR_PANEL} />
           <PlayOff8Panel id={PLAY_OFF_PANEL_8} />
@@ -45,6 +48,10 @@ const App = () => {
           <PlayOff2Panel id={PLAY_OFF_PANEL_2} />
           <PlayOff1Panel id={PLAY_OFF_PANEL_1} />
           <EndTournamentPanel id={END_TOURNAMENT_PREDICTION_PANEL} />
+          
+          <GamesPanel id={GAMES_PANEL} />
+          <GamePredictionPanel id={GAME_PREDICTION_PANEL} />
+
         </View>
       </AppRoot>
     </ConfigProvider>

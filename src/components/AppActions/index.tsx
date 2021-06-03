@@ -13,7 +13,7 @@ const AppActions = () => {
   }
 
   const joinToGroup = () => {
-    bridge.send('VKWebAppJoinGroup',{group_id:198278031})
+    bridge.send('VKWebAppJoinGroup',{group_id:204978993})
       .then(res=>res)
       .catch(err=>err)    
   }

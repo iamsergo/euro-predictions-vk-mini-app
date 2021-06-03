@@ -8,7 +8,7 @@ import AppActions from '../../components/AppActions';
 
 import { PanelName } from '../../types/PanelName'
 import { goTo } from '../../store/slices/navigation';
-import { GROUP_PREDICTOR_PANEL } from '../../constants/panels';
+import { GAMES_PANEL, GROUP_PREDICTOR_PANEL } from '../../constants/panels';
 
 interface MainPanelProps
 {
@@ -22,6 +22,10 @@ const MainPanel: React.FC<MainPanelProps> = ({
 
   const goToTournamentPrediction = () => {
     dispatch(goTo(GROUP_PREDICTOR_PANEL))
+  }
+
+  const goToGamesPrediction = () => {
+    dispatch(goTo(GAMES_PANEL))
   }
 
   return (
@@ -43,7 +47,7 @@ const MainPanel: React.FC<MainPanelProps> = ({
             after={<Icon24BrowserForward/>}
             before={<Icon28GameOutline style={{marginRight:6, color:'#9e2d95', }} width={24} height={24}/>}
             description={'Сделайте прогноз на любой матч'}
-            onClick={goToTournamentPrediction}
+            onClick={goToGamesPrediction}
           >Прогноз на матч</Cell>
         </Card>
       </Div>
