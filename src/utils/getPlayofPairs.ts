@@ -13,15 +13,13 @@ const getTeamByIndexFromGroups = (groups: EuroGroup[], index: string) => {
   return team
 }
 
-const getTeamByIndexFromThirdPlaces = (groups: EuroGroup[], thirdPlaces: Team[], index: string) => {
-  const groupsNames = index.slice(1).split('')
-  const filteredGroups = groups.filter(({ name }) => groupsNames.includes(name.slice(-1)) )
+const getThirdPlaceTeamByRivalGroup = (groups: EuroGroup[], directedThirdPlacesGroups: string, rivalGroup: string) => {
+  const firstPlacesGroups = { B: 0, C: 1, E: 2, F: 3 }
+  const idx = firstPlacesGroups[rivalGroup as (keyof typeof firstPlacesGroups)]
+  const groupName = directedThirdPlacesGroups[idx]
 
-  const thirdPlace = filteredGroups.find(({ teams }) => {
-    return teams.some(team => {
-      return !!thirdPlaces.find(thirdPlace => thirdPlace.name === team.name)
-    })
-  })!.teams[2]
+  const group = groups.find(group => group.name.slice(-1) === groupName)!
+  const thirdPlace = group.teams[2]
 
   return thirdPlace
 }
@@ -31,8 +29,15 @@ const getTeamByIndexFromPairs = (pairs: EuroPair[], id: string) => {
 }
 
 // pairs generator
+const variantsOfThirdPlaces = {"ABCD":"ADBC","ABCE":"AEBC","ABCF":"AFBC","ABDE":"DEAB","ABDF":"DFAB","ABEF":"EFBA","ACDE":"EDCA","ACDF":"FDCA","ACEF":"EFCA","ADEF":"EFDA","BCDE":"EDBC","BCDF":"FDCB","BCEF":"FECB","BDEF":"FEDB","CDEF":"FEDC"}
+
 export const getPlayOffPairs8 = (groups: EuroGroup[], thirdPlaces: Checkable<Team>[]): EuroPair[] => {
   const thirdPlacesTeams = thirdPlaces.filter(team => team.checked)
+
+  const thirdPlacesGroups = thirdPlacesTeams.map(thirdPlace => {
+    return groups.find(group => group.teams.find(team => team.name === thirdPlace.name))!.name.slice(-1)
+  }).join('')
+  const directedThirdPlacesGroups = variantsOfThirdPlaces[thirdPlacesGroups as (keyof typeof variantsOfThirdPlaces)]
 
   const pairs = [
     {
@@ -53,14 +58,14 @@ export const getPlayOffPairs8 = (groups: EuroGroup[], thirdPlaces: Checkable<Tea
       id: '3',
       teams: [
         getTeamByIndexFromGroups(groups, '1C'),
-        getTeamByIndexFromThirdPlaces(groups, thirdPlacesTeams, '3DEF'),
+        getThirdPlaceTeamByRivalGroup(groups, directedThirdPlacesGroups, 'C'),
       ]
     },
     {
       id: '4',
       teams: [
         getTeamByIndexFromGroups(groups, '1B'),
-        getTeamByIndexFromThirdPlaces(groups, thirdPlacesTeams, '3ADEF'),
+        getThirdPlaceTeamByRivalGroup(groups, directedThirdPlacesGroups, 'B'),
       ]
     },
     {
@@ -74,7 +79,7 @@ export const getPlayOffPairs8 = (groups: EuroGroup[], thirdPlaces: Checkable<Tea
       id: '6',
       teams: [
         getTeamByIndexFromGroups(groups, '1F'),
-        getTeamByIndexFromThirdPlaces(groups, thirdPlacesTeams, '3ABC'),
+        getThirdPlaceTeamByRivalGroup(groups, directedThirdPlacesGroups, 'F'),
       ]
     },
     {
@@ -88,7 +93,7 @@ export const getPlayOffPairs8 = (groups: EuroGroup[], thirdPlaces: Checkable<Tea
       id: '8',
       teams: [
         getTeamByIndexFromGroups(groups, '1E'),
-        getTeamByIndexFromThirdPlaces(groups, thirdPlacesTeams, '3ABCD'),
+        getThirdPlaceTeamByRivalGroup(groups, directedThirdPlacesGroups, 'E'),
       ]
     },
   ]
